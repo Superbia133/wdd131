@@ -1,0 +1,84 @@
+/* Import Roman Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roman&display=swap');
+
+body {
+    font-family: 'Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #228B22, #FFA500); /* Forest Green and Orange background */
+    color: #003366; /* Dark blue text */
+}
+
+header {
+    background-color: #228B22; /* Forest green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Horizontal navigation */
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFEB3B; /* Yellow hover effect */
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Align sections horizontally */
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between cards */
+    width: 48%; /* Adjust the width of the cards */
+}
+
+.first-section {
+    margin-left: 0; /* Align to left */
+}
+
+.second-section {
+    margin-right: 0; /* Align to right */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0; /* Vertical spacing between image and text */
+}
+
+footer {
+    background-color: #003366; /* Dark blue footer */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
