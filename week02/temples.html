@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburger" aria-label="Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#" data-menu="Home">Home</a></li>
+                <li><a href="#" data-menu="Old Temples">Old</a></li>
+                <li><a href="#" data-menu="New Temples">New</a></li>
+                <li><a href="#" data-menu="Large Temples">Large</a></li>
+                <li><a href="#" data-menu="Small Temples">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Dynamic heading updated by JavaScript -->
+        <h2 id="currentMenu">Home</h2>
+        <section id="gallery">
+            <!-- At least 9 temple images with captions -->
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 1">
+                <figcaption>Temple of Light</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 2">
+                <figcaption>Temple of the Sun</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 3">
+                <figcaption>Moonlit Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 4">
+                <figcaption>Emerald Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 5">
+                <figcaption>Ruby Shrine</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 6">
+                <figcaption>Temple of the Winds</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 7">
+                <figcaption>Temple of the Forest</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 8">
+                <figcaption>Temple of the Waves</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" alt="Temple 9">
+                <figcaption>Golden Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>. Last Updated: <span id="lastUpdated"></span></p>
+    </footer>
+</body>
+</html>

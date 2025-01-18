@@ -1,0 +1,24 @@
+/* Styles for larger screens */
+#hamburger {
+    display: none; /* Hide hamburger on larger screens */
+}
+
+nav ul {
+    display: flex; /* Horizontal menu for larger screens */
+    justify-content: center;
+    background-color: #004d00; /* Medium dark green */
+}
+
+#gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+figure {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
