@@ -1,29 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const currentYear = new Date().getFullYear();
-    document.getElementById('currentYear').textContent = currentYear;
+// Dynamic Footer Updates
+document.addEventListener("DOMContentLoaded", () => {
+    const yearSpan = document.getElementById("year");
+    const lastModifiedSpan = document.getElementById("last-modified");
 
-    const lastUpdated = document.lastModified;
-    document.getElementById('lastUpdated').textContent = lastUpdated;
+    // Display current year
+    yearSpan.textContent = new Date().getFullYear();
 
-    const menuLinks = document.querySelectorAll('nav ul li a');
-    const currentMenuHeading = document.getElementById('currentMenu');
+    // Display last modified date
+    lastModifiedSpan.textContent = document.lastModified;
+});
 
-    // Add event listeners to each menu link
-    menuLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            const menuText = link.getAttribute('data-menu');
-            currentMenuHeading.textContent = menuText; // Update the heading
-        });
-    });
+// Hamburger Menu Toggle
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
 
-    // Hamburger menu functionality
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    hamburger.addEventListener('click', () => {
-        const isVisible = navMenu.style.display === 'block';
-        navMenu.style.display = isVisible ? 'none' : 'block';
-        hamburger.textContent = isVisible ? '☰' : 'X';
-    });
+hamburger.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
 });

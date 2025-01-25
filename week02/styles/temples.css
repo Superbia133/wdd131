@@ -1,88 +1,78 @@
-/* Base styles */
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Replace with chosen Google Font */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #002b00; /* Dark green for text */
-    background-color: #f0fff0; /* Light green for background */
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 header {
-    background-color: #006400; /* Dark green */
-    color: #f0fff0; /* Light green */
-    padding: 10px;
+    background-color: #004d00;
+    color: white;
+    padding: 1em;
     text-align: center;
-    position: relative;
-}
-
-#hamburger {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    background: none;
-    color: #f0fff0; /* Light green for contrast */
-    border: none;
-    cursor: pointer;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: none; /* Hidden by default for mobile */
-    background-color: #004d00; /* Medium dark green */
-    margin: 0;
+    display: none; /* Initially hidden for hamburger menu */
+    background-color: #004d00;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0.5em 0;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #f0fff0; /* Light green */
-    display: block;
-    padding: 10px;
 }
 
-nav ul li a:hover {
-    background-color: #228b22; /* Forest green for hover effect */
+#hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
 }
 
 main {
-    max-width: 100%;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-}
-
-h2 {
-    color: #004d00; /* Medium dark green */
+    padding: 1em;
 }
 
 #gallery {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for mobile */
-    gap: 10px;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 1em;
 }
 
 figure {
-    margin: 0;
-    padding: 0;
-    border: 1px solid #006400; /* Dark green border */
-    background-color: #f5fff5; /* Very light green for contrast */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-figcaption {
-    font-size: 0.9rem;
-    color: #004d00; /* Medium dark green */
+figure:hover {
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer {
-    background-color: #004d00; /* Medium dark green */
-    color: #f0fff0; /* Light green */
+    background-color: #004d00;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-}
-
-footer span {
-    font-weight: bold;
+    padding: 1em;
 }
