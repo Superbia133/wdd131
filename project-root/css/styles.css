@@ -1,0 +1,150 @@
+/* Global Variables */
+:root {
+    --primary-color: #007c3a;  /* Lush green representing Wales */
+    --secondary-color: #002f6c; /* Dark blue for history and culture */
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Basic Layout */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-info, #right-info {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#left-info {
+    max-width: 50%;
+    order: 1; /* Ensures left info appears before the image in mobile view */
+}
+
+#right-info {
+    max-width: 50%;
+    order: 2; /* Right info comes after image on mobile view */
+}
+
+#image-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+}
+
+#weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#weather-icon {
+    width: 40px;
+    height: auto;
+}
+
+#tourist-locations ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#tourist-locations li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    #hero-content {
+        flex-direction: column;
+    }
+
+    #left-info, #right-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero img {
+        max-height: 250px;
+    }
+
+    #weather-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #weather-icon {
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 601px) {
+    #hero-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #left-info, #right-info {
+        width: 45%;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    #image-container {
+        width: 40%;
+    }
+
+    #weather-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}

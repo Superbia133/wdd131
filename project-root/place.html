@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Wales, a beautiful country filled with verdant views, castles, and rich history.">
+    <meta name="author" content="Juan">
+    <title>Wales - A Travel Destination</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Explore Wales</h1>
+        <p>Discover rolling hills, verdant views, and majestic castles.</p>
+    </header>
+
+    <section id="hero">
+        <div id="hero-content">
+            <!-- Left Side: Weather & Description -->
+            <div id="left-info">
+                <section id="weather">
+                    <h2>Weather ⛅</h2>
+                    <div id="weather-info">
+                        <div>
+                            <p>Temperature: <span id="temp">5°C</span></p>
+                            <p>Wind Speed: <span id="wind-speed">15 km/h</span></p>
+                            <p>Windchill: <span id="windchill-result">5°C</span></p>
+                        </div>
+                        <img src="images/weather-icon.svg" alt="Weather Icon" id="weather-icon">
+                    </div>
+                </section>
+
+                <section id="wales-description">
+                    <h2>About Wales</h2>
+                    <p>Wales is a country of stunning natural beauty, rich in history and culture. Known for its lush landscapes, historic castles, and deep Celtic roots, it offers an unforgettable experience. From the peaks of Snowdonia to the bustling streets of Cardiff, Wales offers something for every traveler.</p>
+                </section>
+            </div>
+
+            <!-- Center: Image of Wales -->
+            <div id="image-container">
+                <picture>
+                    <source srcset="images/wales-small.webp" media="(max-width: 600px)">
+                    <source srcset="images/wales-large.webp" media="(min-width: 601px)">
+                    <img src="images/wales-large.webp" alt="Scenic view of Wales with rolling hills and castles">
+                </picture>
+            </div>
+
+            <!-- Right Side: Tourist Locations & Local Cuisine -->
+            <div id="right-info">
+                <section id="tourist-locations">
+                    <h2>Top Tourist Spots</h2>
+                    <ul>
+                        <li>
+                            <h3>Conwy Castle</h3>
+                            <p>A medieval fortification built by Edward I, Conwy Castle is an impressive structure with towers and walls offering panoramic views of the surrounding countryside and sea.</p>
+                        </li>
+                        <li>
+                            <h3>Snowdonia</h3>
+                            <p>Snowdonia National Park is home to Wales's highest mountain, Mount Snowdon, and over 100 lakes. It’s perfect for outdoor enthusiasts looking to hike, climb, or explore the scenic beauty of the region.</p>
+                        </li>
+                        <li>
+                            <h3>Caernarfon Castle</h3>
+                            <p>This iconic castle, built in the 13th century, stands as a symbol of Welsh heritage. The large fortress and its surrounding town are rich in history, with its walls telling the story of the region's battles and power struggles.</p>
+                        </li>
+                        <li>
+                            <h3>Cardiff</h3>
+                            <p>The capital city of Wales, Cardiff blends modern amenities with rich cultural offerings. Explore Cardiff Castle, stroll through the Victorian arcades, or enjoy the vibrant nightlife and cultural events throughout the year.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="local-cuisine">
+                    <h2>Local Cuisine</h2>
+                    <p><strong>Welsh Rarebit:</strong> A savory dish of melted cheese on toast, often considered the best cheese on toast in the world. Variations include adding beer, mustard, or even a fried egg on top for an extra touch of flavor.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Current Year: <span id="year"></span></p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
