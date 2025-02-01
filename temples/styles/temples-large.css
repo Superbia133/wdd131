@@ -1,0 +1,19 @@
+/* filtered-temples-large.css - Styles for Larger Screens */
+
+/* Hide the hamburger menu on larger screens */
+#hamburger {
+    display: none;
+  }
+  
+  /* Display navigation as a horizontal menu */
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Responsive grid for temple cards on larger screens */
+  #temple-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  

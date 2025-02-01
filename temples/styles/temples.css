@@ -18,18 +18,15 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    display: none; /* Initially hidden for hamburger menu */
+    display: none; /* Hidden for hamburger menu */
     background-color: #004d00;
 }
 
 nav ul li {
     text-align: center;
     margin: 0.5em 0;
-}
-
-nav ul li a {
     color: white;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 #hamburger {
@@ -47,7 +44,7 @@ main {
 
 #gallery {
     display: grid;
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-columns: 1fr;
     gap: 1em;
 }
 

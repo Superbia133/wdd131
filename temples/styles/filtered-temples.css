@@ -1,0 +1,119 @@
+/* filtered-temples.css - Mobile-First Styles Matching Original Design */
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #002b00;              /* Dark green for text */
+    background-color: #f0fff0;   /* Light green for background */
+  }
+  
+  header {
+    background-color: #006400;   /* Dark green */
+    color: #f0fff0;              /* Light green */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    color: #f0fff0;              /* Light green for contrast */
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;               /* Hidden by default on mobile */
+    background-color: #004d00;   /* Medium dark green */
+    text-align: center;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f0fff0;              /* Light green */
+    display: block;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #228b22;   /* Forest green for hover effect */
+  }
+  
+  main {
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Filter heading matching original color */
+  #current-filter {
+    color: #004d00;              /* Medium dark green */
+  }
+  
+  /* Temple Cards Grid */
+  #temple-cards {
+    display: grid;
+    grid-template-columns: 1fr;  /* Single column on mobile */
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Temple Card Styles */
+  .temple-card {
+    background-color: #f5fff5;   /* Very light green for contrast */
+    border: 1px solid #006400;   /* Dark green border */
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .temple-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .temple-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #006400;
+    margin-bottom: 10px;
+  }
+  
+  .temple-card h3 {
+    margin: 5px 0;
+    color: #004d00;              /* Medium dark green */
+  }
+  
+  .temple-card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004d00;   /* Medium dark green */
+    color: #f0fff0;              /* Light green */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  
+  footer span {
+    font-weight: bold;
+  }
+  

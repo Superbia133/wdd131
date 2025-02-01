@@ -1,12 +1,12 @@
-// Dynamic Footer Updates
+// Footer Date Updates
 document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById("year");
     const lastModifiedSpan = document.getElementById("last-modified");
 
-    // Display current year
+    // Current Year
     yearSpan.textContent = new Date().getFullYear();
 
-    // Display last modified date
+    // Last Modified Date
     lastModifiedSpan.textContent = document.lastModified;
 });
 
