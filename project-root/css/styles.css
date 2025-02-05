@@ -148,3 +148,8 @@ footer {
         padding: 2rem;
     }
 }
+
+#weather-icon::after {
+    content: "⛅"; /* Emoticon for weather in larger view */
+    font-size: 2rem;
+}
