@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50; /* Green background for the whole page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Form Container */
+.form-container {
+    background-color: #e6f5e6; /* Lighter green for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #4CAF50; /* Green title */
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #4CAF50; /* Green labels */
+}
+
+/* Form Inputs */
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #4CAF50; /* Green footer text */
+    margin-top: 20px;
+}
