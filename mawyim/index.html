@@ -1,54 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mawyim Factions</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mawyim Factions</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="scroll-container">
-        <div class="scroll">
-            <div class="header">
-                <button class="nav-button" onclick="showPage('golden-guild')">Golden Guild</button>
-                <button class="nav-button" onclick="showPage('mad-seas')">The Mad Seas</button>
-                <button class="nav-button" onclick="showPage('saurian-nation')">The Saurian Nation</button>
-                <button class="nav-button" onclick="showPage('free-peoples')">The Free Peoples</button>
-            </div>
-            <div id="golden-guild" class="content page">
-                <h1>Golden Guild</h1>
-                <div class="images">
-                    <img src="images/human-image.jpg" alt="Human" class="image">
-                    <img src="images/map-image.jpg" alt="Map of Mawyim" class="image">
-                </div>
-                <p>The Golden Guild content here...</p>
-            </div>
-            <div id="mad-seas" class="content page">
-                <h1>The Mad Seas</h1>
-                <div class="images">
-                    <img src="images/pirate-image.jpg" alt="Pirate" class="image">
-                    <img src="images/skeleton-image.jpg" alt="Skeleton" class="image">
-                </div>
-                <p>The Mad Seas content here...</p>
-            </div>
-            <div id="saurian-nation" class="content page">
-                <h1>The Saurian Nation</h1>
-                <div class="images">
-                    <img src="images/saurian-image.jpg" alt="Saurian" class="image">
-                    <img src="images/dinosaur-image.jpg" alt="Dinosaur" class="image">
-                </div>
-                <p>The Saurian Nation content here...</p>
-            </div>
-            <div id="free-peoples" class="content page">
-                <h1>The Free Peoples</h1>
-                <div class="images">
-                    <img src="images/hill-people-image.jpg" alt="Hill People" class="image">
-                    <img src="images/elf-image.jpg" alt="Elf" class="image">
-                </div>
-                <p>The Free Peoples content here...</p>
-            </div>
+  <div class="scroll-container">
+    <div class="scroll">
+      <!-- Navigation Header -->
+      <div class="header">
+        <button class="nav-button" onclick="showPage('golden-guild')">Golden Guild</button>
+        <button class="nav-button" onclick="showPage('mad-seas')">The Mad Seas</button>
+        <button class="nav-button" onclick="showPage('saurian-nation')">The Saurian Nation</button>
+        <button class="nav-button" onclick="showPage('free-peoples')">The Free Peoples</button>
+      </div>
+
+      <!-- Golden Guild Page -->
+      <div id="golden-guild" class="content page">
+        <h1><span class="god-culven">Golden Guild</span></h1>
+        <div class="images">
+          <img src="images/human-image.jpg" alt="Human" class="image" loading="lazy">
+          <img src="images/map-image.jpg" alt="Map of Mawyim" class="image" loading="lazy">
         </div>
+        <p>
+          The Golden Guild is one of the most influential human factions in the world of Mawyim. Founded and led by the divine hero <span class="god-culven">Culven</span>, the Golden Guild unites several territories under a banner of governance, order, and the divine power of fire.
+        </p>
+        <p>
+          The heart of the Guild lies in <strong>Lofopoli</strong>, a magnificent city built upon a large plateau near the bottom of the crescent in the plains. Lofopoli is not only the home of <span class="god-culven">Culven</span> but also the administrative center from which the Golden Guild orchestrates its far-reaching operations.
+        </p>
+        <p>
+          Beyond Lofopoli, the Guild's influence extends to <strong>Lipos</strong>, a strategic collection of coastal cities that form a powerful naval force; to <strong>Galanda</strong>, a fertile country positioned between Lipos and Lofopoli, celebrated for its agricultural abundance and cavalry traditions; and to <strong>Hathpols</strong>, a desert region beneath the jungle comprised of several small cities and towns. Once home to a once-great capital, Hathpols now finds its remaining settlements under the sway of the Golden Guild after a period of devastating conflict.
+        </p>
+        <p>
+          <span class="god-culven">Culven</span>, the Divine Heir of Fire, is revered for his divine mandate and unyielding control, yet his pride is also his greatest flaw. His emblem—a gold marble and brass spear inlaid with rubies and sunstones—symbolizes his power and enduring legacy. Even when he entrusts daily governance to his Cabal of fire mages, known as the Red Council, his influence remains central. Currently, <span class="god-culven">Culven</span> is on a quest to redeem past actions by searching for the scattered pages of the Grand Grimoire, a divine relic associated with the goddess Valisia.
+        </p>
+        <p>
+          With its vast territories and intricate political dynamics, the Golden Guild stands as a formidable force in Mawyim—a beacon of order and strength that continually shapes the destiny of human civilization in this ancient, ever-evolving world.
+        </p>
+      </div>
+
+      <!-- The Mad Seas Page -->
+<div id="mad-seas" class="content page">
+    <h1>The Mad Seas</h1>
+    <div class="images">
+      <img src="images/pirate-image.jpg" alt="Pirate" class="image" loading="lazy">
+      <img src="images/skeleton-image.jpg" alt="Skeleton" class="image" loading="lazy">
     </div>
-    <script src="scripts/scripts.js"></script>
+    <p>
+      The Mad Seas are a tumultuous expanse of ocean, where the forces of trade and piracy intermingle in a dynamic and ever-changing maritime landscape.
+    </p>
+    <p>
+      At the northern edge of the crescent lies <strong>Knolsta</strong>, a vibrant collection of trade cities that thrive on the confluence of ocean currents and river flows, establishing the region as a major naval power.
+    </p>
+    <p>
+      Among the free island cities, <strong>Fortia</strong> stands as the largest and most fortified. This island city is celebrated for its robust defenses and its strategic role as a hub for maritime trade.
+    </p>
+    <p>
+      The smaller island cities of <strong>Capella</strong> and <strong>Gorga</strong> further define the region’s character. Capella is renowned as a haven for pirates with its friendly coves, while Gorga remains isolationist and meticulously fortified to preserve its independence.
+    </p>
+    <p>
+      Additionally, the coastal cities of <strong>Lipos</strong> contribute to the region’s naval prowess, creating a complex tapestry of maritime influence.
+    </p>
+    <p>
+      The enigmatic city of <strong>Thalassos</strong> is constructed from magically raised shipwrecks and the bones of sea creatures, forming a haven where the dead patrol its eerie streets. It is in Thalassos that the divine presence of <span class="god-valisia">Valisia</span> is most potent. As the goddess of water, passage, and the cycles of change, her influence imbues the Mad Seas with both wonder and peril.
+    </p>
+  </div>
+  
+
+     <!-- The Saurian Nation Page -->
+<div id="saurian-nation" class="content page">
+  <h1>The Saurian Nation</h1>
+  <div class="images">
+    <img src="images/saurian-image.jpg" alt="Saurian" class="image" loading="lazy">
+    <img src="images/dinosaur-image.jpg" alt="Dinosaur" class="image" loading="lazy">
+  </div>
+  <p>
+    The Saurian Nation is home to the Saurian and Tetinan peoples who inhabit the jungles along the spine of the crescent. Living in small tribes, they have built their society around three great cities.
+  </p>
+  <p>
+    <strong>City One: Arcoiristitlan</strong> – Positioned at the back of the triangular formation, Arcoiristitlan is a massive capital centered around a grand temple constructed from rainbow stone bricks. This city serves as a religious center, with two roads paved in yellow and orange stone bricks leading to the other cities.
+  </p>
+  <p>
+    <strong>City Two: Depotitlan</strong> – Located at the bottom of the triangle near the edge of the jungle, Depotitlan is a military city dedicated to training the main Saurian army, ensuring the nation's security.
+  </p>
+  <p>
+    <strong>City Three: Molotitlan</strong> – At the top of the triangle lies Molotitlan, a sprawling population center where homes extend from its protective walls. Surrounded by orchards, this city is a crucial food producer and is distinguished by its mixed population of elves and saurians.
+  </p>
+  <p>
+    The Saurian Nation is also the sacred home of the divine entity <span class="god-tlalli">Tlalli</span>, the Divine Heir of Earth. Worshiped with continuous animal sacrifices to keep her in slumber, Tlalli presently appears as a massive Purussaurus encased within a living temple—her snout peeking above the shifting structure as its form is altered by tree roots along cobbled roads.
+  </p>
+  <p>
+    In human form, <span class="god-tlalli">Tlalli</span> takes on the appearance of a woman with feathers in her hair, a long tail, and distinct features reminiscent of her primal state. Her revered symbols—a massive axe entwined with vines and thorns adorned with blue blooming flowers along its handle—serve as powerful emblems of her authority. Although she sleeps, her latent power promises that, if awakened, she would reshape the world to create new lands and safer havens for life. Her strength is such that she is considered one of the most potent divine heirs in Mawyim, rivaling even <span class="god-culven">Culven</span> in power.
+  </p>
+</div>
+
+     <!-- The Free Peoples Page -->
+<div id="free-peoples" class="content page">
+    <h1>The Free Peoples</h1>
+    <div class="images">
+      <img src="images/hill-people-image.jpg" alt="Hill People" class="image" loading="lazy">
+      <img src="images/elf-image.jpg" alt="Elf" class="image" loading="lazy">
+    </div>
+    <p>
+      The Free Peoples are a diverse coalition of groups that prize their freedom and cultural identity. Their destiny is guided by the wisdom of 
+      <span class="god-ustadig">Ustadig</span>, the Divine Heir of Stars, and the wild spirit of 
+      <span class="god-isychia">Isychia</span>, the Divine Heir of Wind. While <span class="god-ustadig">Ustadig</span> wanders all lands sharing wisdom, 
+      <span class="god-isychia">Isychia</span> inspires spontaneity and adventure.
+    </p>
+    <p>
+      A prominent nation within this coalition is <strong>Dinasrydd</strong>, a country of new, largely nomadic people who reside in the hills at the top of the crescent, right at the base of the mountains. Their capital, <strong>Kings Hill</strong>, is a city built of cut stone and is perpetually occupied by their ruling clan, serving as the political and cultural heart of Dinasrydd.
+    </p>
+    <p>
+      In addition to the nomadic tribes of Dinasrydd, the Free Peoples also include the elves who live along the jungle forest line, in the deeper parts of the desert, and in various small towns. These ancient elves bring a rich legacy of mystical wisdom and a deep connection to nature, further enhancing the cultural tapestry of the Free Peoples.
+    </p>
+    <!-- Contact form remains below -->
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="contact-name">Name:</label><br>
+      <input type="text" id="contact-name" name="contact-name" required><br>
+      <label for="contact-email">Email:</label><br>
+      <input type="email" id="contact-email" name="contact-email" required><br>
+      <label for="contact-message">Message:</label><br>
+      <textarea id="contact-message" name="contact-message" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-confirmation"></p>
+  </div>
+  
+
+  <footer>
+    <p><a href="references.html">References</a></p>
+  </footer>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>
